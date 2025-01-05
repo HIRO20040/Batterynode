@@ -2,7 +2,7 @@
 [![test](https://github.com/HIRO20040/ros/actions/workflows/test.yml/badge.svg)](https://github.com/HIRO20040/ros/actions/workflows/test.yml)
 
 ## 概要
-- このリポジトリはRos2のパッケージを利用している。
+- このリポジトリはROS 2のパッケージを利用している。
 
 ## 必要なソフトウェア
 - Python
