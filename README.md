@@ -17,10 +17,10 @@
  git clone https://github.com/HIRO20040/Batterynode
 ```
 ``` 
- cd ros
+ cd batterynode
 ```
 ```
- ros2 run mypkg battery
+ ros2 run batterynode battery
 ```
 
 - 別のターミナルで以下を実行
