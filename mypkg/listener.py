@@ -13,7 +13,7 @@ def cb(msg):
 
 
 def main():
-    pub = node.create_subscription(Int16, "countup", cb, 10)
+    pub = node.create_subscription(Int16, "battery", cb, 10)
     rclpy.spin(node)
 
 
