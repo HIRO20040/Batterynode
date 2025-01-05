@@ -18,7 +18,7 @@ def cb():
     n -= 1
 
 def main():
-        node.create_timer(2.0, cb)
+        node.create_timer(1.0, cb)
         rclpy.spin(node)
 
 if __name__ == '__main__':
