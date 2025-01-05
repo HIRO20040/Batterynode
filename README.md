@@ -14,7 +14,7 @@
 ## 実行方法
 - 1つのターミナルで以下を実行
 ```
- git clone https://github.com/HIRO20040/Batterynode
+ git clone https://github.com/HIRO20040/batterynode
 ```
 ``` 
  cd batterynode
