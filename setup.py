@@ -1,7 +1,7 @@
 from setuptools import setup
 
 
-package_name = 'mypkg'
+package_name = 'batterynode'
 
 setup(
     name=package_name,

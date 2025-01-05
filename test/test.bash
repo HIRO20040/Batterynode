@@ -9,15 +9,15 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 20 ros2 run mypkg battery & 
+timeout 20 ros2 run batterynode battery & 
 
 sleep 2
 
 
-timeout 10 ros2 topic echo /battery > /tmp/mypkg.log 
+timeout 10 ros2 topic echo /battery > /tmp/batterynode.log 
 
-if grep -q "data:" /tmp/mypkg.log; then
-    cat /tmp/mypkg.log | grep '91'
+if grep -q "data:" /tmp/batterynode.log; then
+    cat /tmp/batterynode.log | grep '91'
 else
     echo "data: not found"
 fi
