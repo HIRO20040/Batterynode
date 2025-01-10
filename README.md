@@ -14,13 +14,13 @@
 
 ## 使い方
 
-###実行例
+### 実行例
 
 ```bash
  $ ros2 run batterynode battery
 ```
 
-###出力
+### 出力
 
 ```bash
  $ ros2 topic echo /battery_info
@@ -28,7 +28,7 @@
 
 ```
 
-##参考
+## 参考
 - [Pythonでシステム情報を取得！psutilでバッテリー状態を確認する方法](https://ameblo.jp/fiender/entry-12880810651.html)
 - [Markdownの書き方|Pythonマニア](https://pythonmaniac.com/markdown/)
 
