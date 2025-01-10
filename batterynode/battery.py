@@ -23,7 +23,7 @@ class BatteryNode(Node):
     def publish_battery_info(self):
         battery = psutil.sensors_battery()
         if battery:
-            battery_info = f"バッテリー残量: {battery.percent}% | 電源接続中: {'はい' if battery.power_plugged else 'いいえ'}"
+            battery_info = f"バッテリー残量: {battery.percent}% | 充電中: {'はい' if battery.power_plugged else 'いいえ'}"
             if not battery.power_plugged:
                 battery_info += f" | 残り時間: {battery.secsleft // 60}分"
         

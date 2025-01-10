@@ -1,5 +1,5 @@
 ## batteryノード
-[![test](https://github.com/HIRO20040/ros/actions/workflows/test.yml/badge.svg)](https://github.com/HIRO20040/ros/actions/workflows/test.yml)
+[![test](https://github.com/HIRO20040/batterynode/actions/workflows/test.yml/badge.svg)](https://github.com/HIRO20040/batterynode/actions/workflows/test.yml)
 
 ## 概要
 - このリポジトリはROS 2のパッケージを利用している。
@@ -9,45 +9,38 @@
 
 
 ## ノードの説明
-- バッテリー残量をトピックにのせるもので、数字が100から1秒に1ずつ減っていくようになっている。実際のバッテリー残量ではないので注意。
+- パソコンのバッテリ残量, 充電中か否か, 残り時間を取得してトピックに流す機能を持つ。
 
-## 実行方法
-- 1つのターミナルで以下を実行
-```
- git clone https://github.com/HIRO20040/batterynode
-```
-``` 
- cd batterynode
-```
-```
- ros2 run batterynode battery
+
+## 使い方
+
+###実行例
+
+```bash
+ $ ros2 run batterynode battery
 ```
 
-- 別のターミナルで以下を実行
-```
- ros2 topic echo /battery
+###出力
+
+```bash
+ $ ros2 topic echo /battery_info
+ data: 'バッテリー残量: 33.0% | 充電中: いいえ | 残り時間: 72分'
+
 ```
 
-## 出力
-- ros2 topic echo /batteryを打ったターミナルの方に以下が出力される
+##参考
+- [Pythonでシステム情報を取得！psutilでバッテリー状態を確認する方法](https://ameblo.jp/fiender/entry-12880810651.html)
+- [Markdownの書き方|Pythonマニア](https://pythonmaniac.com/markdown/)
 
-data: 100
-data: 99
-data: 98
-...
+
 
 ## テスト環境
-- Ubuntu 24.04 LTS
-- ROS 2(Humble)
+- Ubuntu 20.04 LTS
+- ROS 2 Humble
 
 
 
-
-
-
-
-
-
+## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 
 - © 2025 Hiroaki Ohmatsu
