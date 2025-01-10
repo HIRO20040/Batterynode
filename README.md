@@ -1,9 +1,11 @@
 ## batteryノード
 [![test](https://github.com/HIRO20040/batterynode/actions/workflows/test.yml/badge.svg)](https://github.com/HIRO20040/batterynode/actions/workflows/test.yml)
 
+- ROS 2 で使用できるパッケージです。
+
 
 ## 概要
-- パソコンのバッテリー残量, 充電中か否か, 残り時間を取得してトピックに流す機能を持つ。バッテリー残量が20%未満になると警告がでるようになっている。
+- パソコンのバッテリー残量, 充電中か否か, 残り時間を取得してトピックに流す機能を持ちます。また、バッテリー残量が20%未満になると警告がでるようになっています。
 
 
 ## 使い方
