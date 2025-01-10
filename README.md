@@ -1,14 +1,8 @@
 ## batteryノード
 [![test](https://github.com/HIRO20040/batterynode/actions/workflows/test.yml/badge.svg)](https://github.com/HIRO20040/batterynode/actions/workflows/test.yml)
 
+
 ## 概要
-- このリポジトリはROS 2のパッケージを利用している。
-
-## 必要なソフトウェア
-- Python
-
-
-## ノードの説明
 - パソコンのバッテリー残量, 充電中か否か, 残り時間を取得してトピックに流す機能を持つ。バッテリー残量が20%未満になると警告がでるようになっている。
 
 
@@ -32,12 +26,14 @@
 - [Pythonでシステム情報を取得！psutilでバッテリー状態を確認する方法](https://ameblo.jp/fiender/entry-12880810651.html)
 - [Markdownの書き方|Pythonマニア](https://pythonmaniac.com/markdown/)
 
+### 使用させていただいたコンテナ
+- [ryuichiueda/ubuntu22.04-ros2:latest](https://hub.docker.com/r/ryuichiueda/ubuntu22.04-ros2)
 
 
 ## テスト環境
-- Ubuntu 20.04 LTS
+- Ubuntu 22.04 LTS
 - ROS 2 Humble
-
+- Python
 
 
 ## ライセンス
